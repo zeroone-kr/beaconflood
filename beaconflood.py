@@ -2,12 +2,11 @@ from scapy.all import Dot11, Dot11Beacon, Dot11Elt, RadioTap, sendp, hexdump
 import sys, os, binascii, threading
 
 class BeaconFlood():
-    def __init__(self, dst_mac_addr = 'ff:ff:ff:ff:ff:ff', src_mac_addr = '11:11:11:11:11:11', ap_mac_addr = '22:22:22:22:22:22', threads = 1):
+    def __init__(self, dst_mac_addr = 'ff:ff:ff:ff:ff:ff', src_mac_addr = '11:11:11:11:11:11', ap_mac_addr = '22:22:22:22:22:22'):
         self.ssid = None
         self.dst_mac_addr = dst_mac_addr
         self.src_mac_addr = src_mac_addr
         self.ap_mac_addr = ap_mac_addr
-        self.threads = threads
 
     def usage(self):
         if len(sys.argv) != 3:
