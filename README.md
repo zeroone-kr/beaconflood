@@ -21,6 +21,6 @@ unmanaged-devices=interface-name:mon*;interface-name:wlan*mon;mac:00:11:22:33:44
 
 ## 사용법
 ```
-beacon-flood.py <interface> <ssid-list-file>
-예시) beacon-flood mon0 ssid-list.txt
+beaconflood.py <interface> <ssid-list-file>
+예시) beaconflood.py mon0 ssid-list.txt
 ```
